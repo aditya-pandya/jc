@@ -10,6 +10,7 @@
 @import 'components.css';
 @import 'fixes.css';
 @import 'mobile-fixes.css';
+@import 'animation-fix.css';
 
 /* Section Specific Styles */
 @import 'sections/header.css';
