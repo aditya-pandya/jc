@@ -9,6 +9,7 @@
 @import 'typography.css';
 @import 'components.css';
 @import 'fixes.css';
+@import 'mobile-fixes.css';
 
 /* Section Specific Styles */
 @import 'sections/header.css';
