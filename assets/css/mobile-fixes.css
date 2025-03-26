@@ -6,27 +6,41 @@
 /* ===== 1. Fix Japan Map SVG Height ===== */
 @media (max-width: 768px) {
   .japan-map {
-    width: 160px !important;  /* Doubled from 80px */
-    height: 240px !important; /* Doubled from 120px */
-    opacity: 0.8; /* Slightly increased visibility */
-    transform: translate(-50%, -50%) scale(1.2); /* Scale up the map */
+    width: 240px !important;  /* Increased to 3x original size */
+    height: 360px !important; /* Increased to 3x original size */
+    opacity: 0.9; /* Better visibility */
+    transform: translate(-50%, -50%) scale(1.5); /* Scale up the map further */
   }
   
   .animated-graphic {
-    height: 280px !important; /* Increased to accommodate larger map */
+    height: 350px !important; /* Increased to accommodate the much larger map */
+    margin-bottom: 1rem !important; /* Adjust spacing */
+    overflow: visible !important; /* Ensure map is not cut off */
   }
   
   /* Adjust pulse circle to match new proportions */
   .pulse-circle {
-    width: 140px !important;
-    height: 140px !important;
+    width: 180px !important;
+    height: 180px !important;
   }
   
   @keyframes expandPulse {
     100% {
-      width: 200px !important;
-      height: 200px !important;
+      width: 260px !important;
+      height: 260px !important;
     }
+  }
+  
+  /* Adjust Japan map container to handle the larger map */
+  .japan-map img {
+    max-width: none !important; /* Override max-width constraint */
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  /* Ensure hero content accommodates the larger graphic */
+  .hero-content {
+    padding-top: 2rem !important;
   }
 }
 
