@@ -334,9 +334,19 @@ function initAnimations() {
     });
 }
 
-// Initialize Feather Icons
-function initFeatherIcons() {
-    if (typeof feather !== 'undefined') {
-        feather.replace();
-    }
-}
+// Pulse animation
+document.addEventListener('DOMContentLoaded', function() {
+  // Remove any existing pulse animations
+  const oldPulses = document.querySelectorAll('.new-pulse-circle');
+  oldPulses.forEach(el => el.remove());
+  
+  // Create new pulse element
+  const pulseEl = document.createElement('div');
+  pulseEl.className = 'new-pulse-circle';
+  
+  // Add it to the container
+  const container = document.querySelector('.animated-graphic');
+  if (container) {
+    container.appendChild(pulseEl);
+  }
+});

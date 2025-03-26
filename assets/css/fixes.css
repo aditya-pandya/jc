@@ -527,137 +527,99 @@
     }
 }
 
-/* 
- * Fixed Pulse Animation for Desktop and Mobile
- * Complete rewrite of the animation to ensure it works correctly
- */
+/* IMPORTANT: REMOVE ALL PREVIOUS ANIMATION CODE FIRST */
+/* Delete any existing expandPulse, desktopPulse, mobilePulse animations */
+/* Delete any existing styles for pulse-circle */
 
-/* Reset the original animation first */
-@keyframes expandPulse {
-  0% { opacity: 0.7; }
-  100% { opacity: 0; }
+/* Step 1: Basic map sizing for all devices */
+.japan-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
 }
 
-/* Desktop-specific styles */
+.pulse-circle {
+  display: none !important; /* Hide the original */
+}
+
+.new-pulse-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid rgba(255, 77, 77, 0.7);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Different sizes for desktop and mobile */
 @media (min-width: 769px) {
-  /* Japan map sizing */
+  .new-pulse-circle {
+    width: 150px;
+    height: 150px;
+    animation: newPulseDesktop 3s infinite;
+  }
+}
+
+@media (max-width: 768px) {
+  .new-pulse-circle {
+    width: 100px;
+    height: 100px;
+    animation: newPulseMobile 3s infinite;
+  }
+}
+
+/* Define new animations */
+@keyframes newPulseDesktop {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.5);
+    opacity: 0;
+  }
+}
+
+@keyframes newPulseMobile {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* Desktop sizes */
+@media (min-width: 769px) {
   .japan-map {
-    width: 400px !important;
-    height: 600px !important;
-    opacity: 0.9;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.2);
+    width: 400px;
+    height: 600px;
   }
   
   .animated-graphic {
-    height: 450px !important;
+    height: 450px;
     position: relative;
-    overflow: visible !important;
-  }
-  
-  /* Create a new desktop-specific pulse element */
-  .pulse-circle {
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    width: 150px !important;
-    height: 150px !important;
-    border: 2px solid var(--accent-light) !important;
-    border-radius: 50% !important;
-    animation: desktopPulse 3s infinite ease-out !important;
-  }
-  
-  /* New desktop pulse animation */
-  @keyframes desktopPulse {
-    0% {
-      width: 150px;
-      height: 150px;
-      opacity: 0.7;
-      transform: translate(-50%, -50%) scale(1);
-    }
-    100% {
-      width: 150px;
-      height: 150px;
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(2.5);
-    }
+    overflow: visible;
   }
 }
 
-/* Mobile-specific styles */
+/* Mobile sizes */
 @media (max-width: 768px) {
   .japan-map {
-    width: 240px !important;
-    height: 360px !important;
-    opacity: 0.9;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    width: 240px;
+    height: 360px;
     transform: translate(-50%, -50%) scale(1.5);
   }
   
   .animated-graphic {
-    height: 350px !important;
-    margin-bottom: 1rem !important;
+    height: 350px;
     position: relative;
-    overflow: visible !important;
-  }
-  
-  /* Mobile-specific pulse element */
-  .pulse-circle {
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    width: 100px !important;
-    height: 100px !important;
-    border: 2px solid var(--accent-light) !important;
-    border-radius: 50% !important;
-    animation: mobilePulse 3s infinite ease-out !important;
-  }
-  
-  /* Mobile pulse animation */
-  @keyframes mobilePulse {
-    0% {
-      width: 100px;
-      height: 100px;
-      opacity: 0.7;
-      transform: translate(-50%, -50%) scale(1);
-    }
-    100% {
-      width: 100px;
-      height: 100px;
-      opacity: 0;
-      transform: translate(-50%, -50%) scale(2.5);
-    }
-  }
-}
-
-/* Ensure the SVG image can properly scale */
-.japan-map img {
-  max-width: none !important;
-  width: 100% !important;
-  height: 100% !important;
-  display: block !important;
-}
-
-/* Very large screens */
-@media (min-width: 1600px) {
-  .japan-map {
-    width: 500px !important;
-    height: 750px !important;
-  }
-  
-  .animated-graphic {
-    height: 500px !important;
-  }
-  
-  /* Adjust pulse for very large screens */
-  .pulse-circle {
-    width: 180px !important;
-    height: 180px !important;
+    overflow: visible;
   }
 }

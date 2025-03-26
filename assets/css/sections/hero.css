@@ -88,19 +88,6 @@
     animation: pulse 2s infinite 1s;
 }
 
-.pulse-circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;  /* Doubled from 100px */
-    height: 200px; /* Doubled from 100px */
-    border-radius: 50%;
-    border: 2px solid var(--accent-light);
-    opacity: 0;
-    animation: expandPulse 3s infinite;
-}
-
 .ai-node {
     position: absolute;
     top: 20%;
