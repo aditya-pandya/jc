@@ -526,3 +526,83 @@
         min-width: 100%;
     }
 }
+
+/* 
+ * Updated Japan Map Size for All Devices
+ * Increases the map size on both desktop and mobile
+ */
+
+/* Desktop and larger devices */
+.japan-map {
+  width: 400px !important; /* Doubled from original ~200px */
+  height: 600px !important; /* Doubled from original ~300px */
+  opacity: 0.9;
+  transform: translate(-50%, -50%) scale(1.2); /* Add slight scale for emphasis */
+}
+
+.animated-graphic {
+  height: 450px !important; /* Increased to accommodate larger map */
+  overflow: visible !important;
+}
+
+.pulse-circle {
+  width: 300px !important;
+  height: 300px !important;
+}
+
+@keyframes expandPulse {
+  100% {
+    width: 400px !important;
+    height: 400px !important;
+  }
+}
+
+/* Ensure the SVG image can properly scale */
+.japan-map img {
+  max-width: none !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Already defined mobile styles - keep these the same but put them after desktop styles */
+@media (max-width: 768px) {
+  .japan-map {
+    width: 240px !important;
+    height: 360px !important;
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  
+  .animated-graphic {
+    height: 350px !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .pulse-circle {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  
+  @keyframes expandPulse {
+    100% {
+      width: 260px !important;
+      height: 260px !important;
+    }
+  }
+  
+  .hero-content {
+    padding-top: 2rem !important;
+  }
+}
+
+/* Slightly adjust layout for very large screens */
+@media (min-width: 1600px) {
+  .japan-map {
+    width: 500px !important;
+    height: 750px !important;
+  }
+  
+  .animated-graphic {
+    height: 500px !important;
+  }
+}
