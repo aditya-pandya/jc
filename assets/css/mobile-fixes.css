@@ -6,25 +6,26 @@
 /* ===== 1. Fix Japan Map SVG Height ===== */
 @media (max-width: 768px) {
   .japan-map {
-    width: 80px !important;
-    height: 180px !important; /* Increased from 120px */
+    width: 160px !important;  /* Doubled from 80px */
+    height: 240px !important; /* Doubled from 120px */
     opacity: 0.8; /* Slightly increased visibility */
+    transform: translate(-50%, -50%) scale(1.2); /* Scale up the map */
   }
   
   .animated-graphic {
-    height: 230px !important; /* Increased from 180px to accommodate taller map */
+    height: 280px !important; /* Increased to accommodate larger map */
   }
   
   /* Adjust pulse circle to match new proportions */
   .pulse-circle {
-    width: 100px !important;
-    height: 100px !important;
+    width: 140px !important;
+    height: 140px !important;
   }
   
   @keyframes expandPulse {
     100% {
-      width: 160px !important;
-      height: 160px !important;
+      width: 200px !important;
+      height: 200px !important;
     }
   }
 }
@@ -47,7 +48,7 @@
 @media (max-width: 768px) {
   /* Reduce space between circle and content */
   .process-step {
-    padding-left: 95px !important; /* Reduced from 110px */
+    padding-left: 85px !important; /* Reduced from original padding to bring cards closer */
   }
   
   /* Better align the timeline vertical line */
@@ -67,9 +68,12 @@
     left: 8px !important; /* Adjusted to align with the line */
   }
   
-  /* Ensure step content has enough padding */
+  /* Ensure step content has enough padding and width */
   .step-content {
     padding: var(--spacing-md) !important;
+    width: calc(100% - 10px) !important; /* Make cards slightly wider */
+    max-width: 100% !important;
+    margin-left: -10px !important; /* Pull cards slightly closer to circles */
   }
 }
 
@@ -141,6 +145,34 @@
   /* Add some space between language options */
   .language-options {
     gap: 10px !important;
+  }
+}
+
+/* ===== Fix Button Text Size ===== */
+@media (max-width: 768px) {
+  /* Increase button text size for all buttons */
+  .cta-button, 
+  .submit-button, 
+  .language-toggle, 
+  .language-option,
+  .text-link,
+  .step-content .text-link {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+    padding: 0.9rem 1.5rem !important;
+    letter-spacing: 0.02em !important;
+  }
+  
+  /* Specific adjustment for text-links */
+  .text-link {
+    padding: 0.5rem 0 !important;
+    font-size: 1.05rem !important;
+  }
+  
+  /* For step numbers inside process circles */
+  .step-number {
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
   }
 }
 
