@@ -528,39 +528,111 @@
 }
 
 /* 
- * Updated Japan Map Size for All Devices
- * Increases the map size on both desktop and mobile
+ * Fixed Pulse Animation for Desktop and Mobile
+ * Complete rewrite of the animation to ensure it works correctly
  */
 
-/* Desktop and larger devices */
-.japan-map {
-  width: 400px !important; /* Doubled from original ~200px */
-  height: 600px !important; /* Doubled from original ~300px */
-  opacity: 0.9;
-  transform: translate(-50%, -50%) scale(1.2); /* Add slight scale for emphasis */
-}
-
-.animated-graphic {
-  height: 450px !important; /* Increased to accommodate larger map */
-  overflow: visible !important;
-}
-
-/* Fix pulse animation for desktop */
-.pulse-circle {
-  width: 300px !important;
-  height: 300px !important;
-}
-
+/* Reset the original animation first */
 @keyframes expandPulse {
-  0% {
-    width: 300px !important;
-    height: 300px !important;
-    opacity: 0.7;
-  }
-  100% {
+  0% { opacity: 0.7; }
+  100% { opacity: 0; }
+}
+
+/* Desktop-specific styles */
+@media (min-width: 769px) {
+  /* Japan map sizing */
+  .japan-map {
     width: 400px !important;
-    height: 400px !important;
-    opacity: 0;
+    height: 600px !important;
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  
+  .animated-graphic {
+    height: 450px !important;
+    position: relative;
+    overflow: visible !important;
+  }
+  
+  /* Create a new desktop-specific pulse element */
+  .pulse-circle {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 150px !important;
+    height: 150px !important;
+    border: 2px solid var(--accent-light) !important;
+    border-radius: 50% !important;
+    animation: desktopPulse 3s infinite ease-out !important;
+  }
+  
+  /* New desktop pulse animation */
+  @keyframes desktopPulse {
+    0% {
+      width: 150px;
+      height: 150px;
+      opacity: 0.7;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      width: 150px;
+      height: 150px;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(2.5);
+    }
+  }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .japan-map {
+    width: 240px !important;
+    height: 360px !important;
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  
+  .animated-graphic {
+    height: 350px !important;
+    margin-bottom: 1rem !important;
+    position: relative;
+    overflow: visible !important;
+  }
+  
+  /* Mobile-specific pulse element */
+  .pulse-circle {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100px !important;
+    height: 100px !important;
+    border: 2px solid var(--accent-light) !important;
+    border-radius: 50% !important;
+    animation: mobilePulse 3s infinite ease-out !important;
+  }
+  
+  /* Mobile pulse animation */
+  @keyframes mobilePulse {
+    0% {
+      width: 100px;
+      height: 100px;
+      opacity: 0.7;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(2.5);
+    }
   }
 }
 
@@ -569,40 +641,10 @@
   max-width: none !important;
   width: 100% !important;
   height: 100% !important;
+  display: block !important;
 }
 
-/* Already defined mobile styles - keep these the same but put them after desktop styles */
-@media (max-width: 768px) {
-  .japan-map {
-    width: 240px !important;
-    height: 360px !important;
-    opacity: 0.9;
-    transform: translate(-50%, -50%) scale(1.5);
-  }
-  
-  .animated-graphic {
-    height: 350px !important;
-    margin-bottom: 1rem !important;
-  }
-  
-  .pulse-circle {
-    width: 180px !important;
-    height: 180px !important;
-  }
-  
-  @keyframes expandPulse {
-    100% {
-      width: 260px !important;
-      height: 260px !important;
-    }
-  }
-  
-  .hero-content {
-    padding-top: 2rem !important;
-  }
-}
-
-/* Slightly adjust layout for very large screens */
+/* Very large screens */
 @media (min-width: 1600px) {
   .japan-map {
     width: 500px !important;
@@ -611,5 +653,11 @@
   
   .animated-graphic {
     height: 500px !important;
+  }
+  
+  /* Adjust pulse for very large screens */
+  .pulse-circle {
+    width: 180px !important;
+    height: 180px !important;
   }
 }
