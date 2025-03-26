@@ -545,15 +545,22 @@
   overflow: visible !important;
 }
 
+/* Fix pulse animation for desktop */
 .pulse-circle {
   width: 300px !important;
   height: 300px !important;
 }
 
 @keyframes expandPulse {
+  0% {
+    width: 300px !important;
+    height: 300px !important;
+    opacity: 0.7;
+  }
   100% {
     width: 400px !important;
     height: 400px !important;
+    opacity: 0;
   }
 }
 
