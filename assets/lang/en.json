@@ -28,60 +28,60 @@
     ]
   },
   "challenges": {
-    "title": "Healthcare Challenges We Solve",
-    "intro": "Japan's healthcare market is complex — from PMDA approvals to conservative provider culture and strict data laws. We guide you through with proven strategies and trusted local ties.",
-    "label": {
-      "challenge": "Challenge:",
-      "solution": "Solution:"
-    },
-    "categories": {
-      "regulatoryNavigation": {
-        "title": "Regulation & Compliance",
-        "challenges": [
-          {
-            "title": "PMDA Approval",
-            "challenge": "Device classification, Shonin approval, and trial requirements are complex and costly.",
-            "solution": "We map pathways, facilitate consultations, use Sakigake fast-tracks, and plan evidence to accelerate approvals."
-          },
-          {
-            "title": "Data Privacy",
-            "challenge": "Japan’s PIPA and medical data rules are strict and evolving.",
-            "solution": "We ensure compliance, build strong security, and protect patient data while keeping workflows efficient."
-          }
-        ]
-      },
-      "providerAdoption": {
-        "title": "Provider Adoption",
-        "challenges": [
-          {
-            "title": "Risk-Averse Culture",
-            "challenge": "Providers demand strong local evidence, KOL endorsement, and consensus before adoption.",
-            "solution": "We build credibility through KOLs, generate Japanese clinical data, and navigate decision-making with cultural fluency."
-          },
-          {
-            "title": "Hospital Integration",
-            "challenge": "Hospital IT systems and EMRs in Japan have unique requirements.",
-            "solution": "We adapt your solution for leading EMR vendors, ensure workflow fit, and support deployment."
-          }
-        ]
-      },
-      "marketStrategy": {
-        "title": "Reimbursement & Access",
-        "challenges": [
-          {
-            "title": "NHI Coverage",
-            "challenge": "NHI requires clear proof of cost-effectiveness or clinical gains before coverage.",
-            "solution": "We prepare health economics cases, manage Chuikyo negotiations, and position for optimal reimbursement."
-          },
-          {
-            "title": "Pricing Pressure",
-            "challenge": "Innovation value must balance with cost controls and biennial price cuts.",
-            "solution": "We design strategies that capture value early while planning for long-term sustainability."
-          }
-        ]
-      }
-    }
+  "title": "Healthcare Challenges We Solve",
+  "intro": "Japan's healthcare market is complex — from PMDA approvals to risk-averse providers and strict data rules. We help you break through with clear strategies and trusted local ties.",
+  "label": {
+    "challenge": "Challenge:",
+    "solution": "Solution:"
   },
+  "categories": {
+    "regulatoryNavigation": {
+      "title": "Regulation & Compliance",
+      "challenges": [
+        {
+          "title": "PMDA Approval",
+          "challenge": "Device classification, Shonin approval, and trials are complex, costly, and slow.",
+          "solution": "We map pathways, manage PMDA consultations, leverage Sakigake fast-tracks, and plan evidence to speed approvals."
+        },
+        {
+          "title": "Data Privacy",
+          "challenge": "Japan’s PIPA and medical data rules are among the strictest worldwide.",
+          "solution": "We ensure compliance, design strong security, and protect patient data while keeping workflows efficient."
+        }
+      ]
+    },
+    "providerAdoption": {
+      "title": "Provider Adoption",
+      "challenges": [
+        {
+          "title": "Risk-Averse Culture",
+          "challenge": "Providers require local evidence, KOL endorsement, and consensus before adoption.",
+          "solution": "We build credibility through KOLs, generate Japanese clinical data, and navigate decision-making with cultural fluency."
+        },
+        {
+          "title": "Hospital Integration",
+          "challenge": "Japanese hospitals run on unique EMRs and workflows with limited interoperability.",
+          "solution": "We adapt your solution for major EMR vendors, align with workflows, and support technical deployment."
+        }
+      ]
+    },
+    "marketStrategy": {
+      "title": "Reimbursement & Access",
+      "challenges": [
+        {
+          "title": "NHI Coverage",
+          "challenge": "National Health Insurance demands proof of cost-effectiveness or clinical superiority before coverage.",
+          "solution": "We prepare health economics cases, guide Chuikyo negotiations, and position you for favorable reimbursement."
+        },
+        {
+          "title": "Pricing Pressure",
+          "challenge": "Innovation value must balance with cost controls and biennial price revisions.",
+          "solution": "We design pricing that captures early value while ensuring long-term sustainability."
+        }
+      ]
+    }
+  }
+},
   "services": {
     "title": "Market Entry Services",
     "subtitle": "From PMDA to reimbursement, we guide every step of Japan market entry.",
