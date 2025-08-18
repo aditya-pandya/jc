@@ -1,21 +1,21 @@
 {
   "siteTitle": "JungleCode - Navigate Japan's Healthcare Market with Confidence",
   "hero": {
-    "title": "Enter Japan’s Healthcare Market",
-    "subtitle": "Bring your innovation to the world’s third-largest healthcare economy with local expertise and trusted access.",
+    "title": "Enter Japan's Healthcare Market",
+    "subtitle": "Bring your innovation to the world's third-largest healthcare economy with local expertise and trusted access.",
     "cta": "Plan Entry"
   },
   "about": {
     "title": "You Build Healthcare Innovation. We Help You Land It in Japan.",
-    "description": "JungleCode helps global healthcare and healthtech ventures succeed in Japan — bridging regulation, culture, and clinical practice. From PMDA pathways to hospital adoption, we guide you with clarity and precision so your innovation improves patient outcomes here.",
+    "description": "JungleCode helps global healthcare and healthtech ventures succeed in Japan - bridging regulation, culture, and clinical practice. From Pharmaceuticals and Medical Devices Agency (PMDA) pathways to hospital adoption, we guide you with clarity and precision so your innovation improves patient outcomes here.",
     "mission": {
       "title": "Our Mission",
-      "text": "To accelerate adoption of transformative healthcare technologies in Japan — delivering patient impact while navigating regulation and culture with care."
+      "text": "To accelerate adoption of transformative healthcare technologies in Japan - delivering patient impact while navigating regulation and culture with care."
     },
     "keyPoints": [
       {
         "title": "Healthcare Insight",
-        "description": "We understand Japan’s health system — from PMDA approvals to hospital workflows."
+        "description": "We understand Japan's health system - from PMDA approvals to hospital workflows."
       },
       {
         "title": "Strategic Entry",
@@ -23,13 +23,13 @@
       },
       {
         "title": "Trusted Access",
-        "description": "We connect you with hospitals, KOLs, and decision-makers who shape adoption."
+        "description": "We connect you with hospitals, key opinion leaders (KOLs), and decision-makers who shape adoption."
       }
     ]
   },
   "challenges": {
     "title": "Healthcare Challenges We Solve",
-    "intro": "Japan’s healthcare market is highly structured and risk-averse. We help you move through barriers like regulation, provider adoption, and reimbursement with strategies that work locally.",
+    "intro": "Japan's healthcare market is highly structured and risk-averse. We help you move through barriers like regulation, provider adoption, and reimbursement with strategies that work locally.",
     "label": {
       "challenge": "Challenge:",
       "solution": "Solution:"
@@ -40,12 +40,12 @@
         "challenges": [
           {
             "title": "PMDA Approval",
-            "challenge": "Device classification, Shonin approval, and trials are complex and slow.",
-            "solution": "We map pathways, guide consultations, and plan evidence for faster approval."
+            "challenge": "Device classification, marketing approval (Shonin), and trials with the PMDA are complex and slow.",
+            "solution": "We map pathways, guide consultations, leverage Japan's fast-track review system (Sakigake designation), and plan evidence for faster approval."
           },
           {
             "title": "Data Privacy",
-            "challenge": "Japan’s PIPA and medical data rules are strict and often misunderstood.",
+            "challenge": "Japan's Act on the Protection of Personal Information (PIPA) and medical data rules are strict and often misunderstood.",
             "solution": "We ensure compliance, design secure workflows, and protect patient trust."
           }
         ]
@@ -60,7 +60,7 @@
           },
           {
             "title": "Hospital Integration",
-            "challenge": "Unique EMRs and limited interoperability slow technical adoption.",
+            "challenge": "Unique electronic medical records (EMRs) and limited interoperability slow adoption.",
             "solution": "We adapt your solution to major EMRs and align with hospital workflows."
           }
         ]
@@ -70,12 +70,12 @@
         "challenges": [
           {
             "title": "NHI Coverage",
-            "challenge": "National Health Insurance requires proof of cost-effectiveness or superiority.",
-            "solution": "We prepare health economics cases and guide Chuikyo negotiations."
+            "challenge": "Japan's National Health Insurance (NHI) requires proof of cost-effectiveness or superiority.",
+            "solution": "We prepare health economics cases and guide Central Social Insurance Medical Council (Chuikyo) negotiations."
           },
           {
             "title": "Pricing Pressure",
-            "challenge": "Innovation value must balance with biennial price revisions.",
+            "challenge": "Innovation value must balance with biennial price revisions under NHI.",
             "solution": "We design pricing for early traction and long-term sustainability."
           }
         ]
@@ -87,7 +87,7 @@
     "subtitle": "From PMDA to reimbursement, we guide each step of your Japan entry.",
     "primary": {
       "title": "Regulatory Strategy",
-      "description": "Navigate Japan’s regulatory system with confidence — from PMDA pathways to reimbursement positioning.",
+      "description": "Navigate Japan's regulatory system with confidence - from PMDA pathways to reimbursement positioning.",
       "features": [
         "Classification and roadmap design",
         "Clinical trial and evidence planning",
@@ -99,7 +99,7 @@
     "secondary": [
       {
         "title": "Provider Engagement",
-        "description": "Build adoption with Japan’s medical community through trusted access.",
+        "description": "Build adoption with Japan's medical community through trusted access.",
         "features": [
           "Hospital partnerships and pilots",
           "KOL mapping and advocacy",
@@ -110,9 +110,9 @@
       },
       {
         "title": "Localization",
-        "description": "Adapt your solution for Japan’s clinical context — beyond translation.",
+        "description": "Adapt your solution for Japan's clinical context - beyond translation.",
         "features": [
-          "Clinical content and UX localization",
+          "Clinical content and user experience (UX) localization",
           "Guideline and treatment alignment",
           "Patient materials and consent docs",
           "Compliance and quality adaptation"
@@ -127,7 +127,7 @@
     "steps": [
       {
         "title": "Regulatory Review",
-        "duration": "3–4 weeks",
+        "duration": "3-4 weeks",
         "deliverable": "PMDA Strategy Report",
         "description": "We assess classification, map requirements, and define evidence needs.",
         "number": "1",
@@ -135,7 +135,7 @@
       },
       {
         "title": "Market Planning",
-        "duration": "4–6 weeks",
+        "duration": "4-6 weeks",
         "deliverable": "Entry Blueprint",
         "description": "We design strategies for validation, provider engagement, and reimbursement.",
         "number": "2",
@@ -143,7 +143,7 @@
       },
       {
         "title": "Pilots & Launch",
-        "duration": "6–12 months",
+        "duration": "6-12 months",
         "deliverable": "Pilot Plan",
         "description": "From PMDA submissions to hospital pilots, we support local rollout.",
         "number": "3",
@@ -161,23 +161,23 @@
   },
   "whyJapan": {
     "title": "Why Japan",
-    "intro": "Japan’s super-aged society and universal coverage make it one of the world’s most urgent and attractive healthcare markets.",
+    "intro": "Japan's super-aged society and universal coverage make it one of the world's most urgent and attractive healthcare markets.",
     "sections": [
       {
         "title": "Market Dynamics",
         "items": [
-          "$400B+ healthcare market — third largest globally",
+          "$400B+ healthcare market - third largest globally",
           "28% of population over 65, rising further by 2040",
           "400,000+ healthcare worker shortage by 2035",
-          "Government funding digital health under Society 5.0",
+          "Government funding digital health under Japan's national super-smart society strategy (Society 5.0)",
           "Universal coverage for 127M people"
         ]
       },
       {
         "title": "Key Advantages",
         "items": [
-          "Government mandate for digital health and AI",
-          "Sakigake fast-track system for innovation",
+          "Government mandate for digital health and artificial intelligence (AI)",
+          "Sakigake designation for breakthrough products",
           "Premium reimbursement for proven technologies",
           "8,000+ hospitals with advanced infrastructure",
           "Culture of precision aligned with medical standards"
@@ -187,7 +187,7 @@
         "title": "Success Factors",
         "items": [
           "Local evidence drives provider adoption",
-          "KOL support critical in decision-making",
+          "KOL support is critical in decision-making",
           "Long-term trust is required for scale",
           "Strict safety standards enforce compliance",
           "Premium positioning for proven outcomes"
@@ -197,7 +197,7 @@
   },
   "getStarted": {
     "title": "Get Started",
-    "subtitle": "Work with partners who understand Japan’s clinical and cultural complexity.",
+    "subtitle": "Work with partners who understand Japan's clinical and cultural complexity.",
     "consultationSteps": [
       {
         "title": "Discovery",
@@ -231,7 +231,7 @@
   },
   "contact": {
     "title": "Request Consultation",
-    "subtitle": "Share your healthcare innovation and timeline. We’ll outline your path to approval, adoption, and success in Japan.",
+    "subtitle": "Share your healthcare innovation and timeline. We will outline your path to approval, adoption, and success in Japan.",
     "formLabels": {
       "name": "Your Name",
       "email": "Email Address",
@@ -260,8 +260,8 @@
         "Pilot programs underway"
       ],
       "timeline": [
-        { "label": "0–6 months" },
-        { "label": "6–12 months" },
+        { "label": "0-6 months" },
+        { "label": "6-12 months" },
         { "label": "12+ months" }
       ],
       "marketPresence": [
@@ -283,7 +283,13 @@
     ],
     "languageToggle": "EN | JP"
   },
-  "navItems": [["Home"], ["About"], ["Challenges"], ["Services"], ["Contact"]],
+  "navItems": [
+    ["Home"],
+    ["About"],
+    ["Challenges"],
+    ["Services"],
+    ["Contact"]
+  ],
   "en": "English",
   "jp": "日本語",
   "leadership": {
@@ -291,7 +297,7 @@
     "team": [
       {
         "name": "Jet Villegas",
-        "bio": "A builder, operator, and investor with 25+ years in global technology and healthcare. Jet has led engineering operations in Tokyo and San Francisco, bridging medical AI with Japan’s regulatory system. His expertise spans healthcare software, device localization, and workflow integration, with deep ties to hospitals and regulators."
+        "bio": "A builder, operator, and investor with 25+ years in global technology and healthcare. Jet has led engineering operations in Tokyo and San Francisco, bridging medical artificial intelligence (AI) with Japan's regulatory system. His expertise spans healthcare software, device localization, and workflow integration, with deep ties to hospitals and regulators."
       },
       {
         "name": "Aditya Pandya",
@@ -299,4 +305,4 @@
       }
     ]
   }
-        }
+  }
